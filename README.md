@@ -1,137 +1,114 @@
-# Website Creation Quick Reference
+# Vibe-Coding System: Websites + Content + Growth
 
-## For Human Vibe-Coders (Not AI Agents)
+**🌍 UNIVERSAL FRAMEWORK**: Works for ANY website type - e-commerce, education, religious, gaming/anime, restaurants, healthcare, B2B, portfolios, or anything else!
 
-### 🚀 10-Minute Website Setup
+## 🚀 Quick Start (For Human Vibe-Coders)
 
-1. **Write** your business goals in `input/website-requirement.md`
-2. **Execute** planning phase with your AI agent:
-   ```
-   Execute template/execute/1_website-prd.md
-   Execute template/execute/2_website-strategy.md
-   ```
-3. **Build** your website:
-   ```
-   Execute template/execute/3_website-implement.md
-   Execute template/execute/4_website-seo-optimize.md
-   Execute template/execute/5_website-analytics.md
-   Execute template/execute/6_website-funnel.md
-   Execute template/execute/7_website-test-deploy.md
-   ```
+### Complete 10-Step Process
+```bash
+# Define your goals
+Edit input/website-requirement.md      # Website specifications
+Edit input/content-requirement.md      # Content strategy
 
-### Your Only Jobs:
-- Define business goals & target audience
-- Approve strategies (say "APPROVED" or "NEEDS FIXES")
-- Review designs and content
-- Test conversion paths
-- Monitor analytics
+# Phase 1: Discovery & Planning (Steps 0-2)
+Execute template/execute/0_environment-setup.md        # Validate environment
+Execute template/execute/1_requirements-discovery.md   # AI asks clarifying questions
+Execute template/execute/2_design-document.md          # Create staged plan
 
-### Key Commands:
-- `Execute [template]` - Run AI agent script
-- `APPROVED` - Continue to next step
-- `NEEDS FIXES: [issue]` - AI will fix and retry
-- `RESTART` - Major rework needed
+# Phase 2: Website Development (Steps 3-5)
+Execute template/execute/3_implementation-stages.md    # Build with to-do lists
+Execute template/execute/4_testing-validation.md       # Test together
+Execute template/execute/5_production-deployment.md    # Deploy to Vercel
 
-### 🎯 What You'll Get:
+# Phase 3: Content Pipeline (Steps 6-8)
+Execute template/execute/6_content-strategy.md         # Plan content pillars
+Execute template/execute/7_content-production.md       # Create content
+Execute template/execute/8_content-distribution.md     # Publish everywhere
 
-#### Search Engine Performance
-- ✅ First page rankings for target keywords
-- ✅ Rich snippets in search results
-- ✅ AI search optimization (ChatGPT, Gemini)
-- ✅ Voice search compatibility
+# Phase 4: Growth & Optimization (Steps 9-10)
+Execute template/execute/9_growth-analytics.md         # Analyze performance
+Execute template/execute/10_growth-execution.md        # Implement improvements
+```
 
-#### Conversion Optimization
-- ✅ 5-10% conversion rates (vs 2-3% average)
-- ✅ Multi-stage conversion funnels
-- ✅ A/B testing framework
-- ✅ Lead scoring & nurturing
+## 🎯 Your Role (Human Vibecoder):
 
-#### Technical Excellence
-- ✅ Core Web Vitals passing (fast loading)
-- ✅ Mobile-first responsive design
-- ✅ Analytics & tracking setup
-- ✅ GDPR-compliant data handling
+### Phase 1: Discovery & Planning
+- **Answer** AI's clarifying questions for requirements
+- **Review** design document and staged plan
+- **Approve** before implementation begins
 
-### 📊 Expected Timeline:
+### Phase 2: Website Development
+- **Test** each stage as it's built
+- **Provide** immediate feedback
+- **Approve** stage completion
 
-**Week 1-2**: Strategy & Planning
-- Requirements analysis
-- Competitor research
-- Funnel design
-- Tech stack selection
+### Phase 3: Content Pipeline
+- **Define** content strategy and goals
+- **Edit** and approve content drafts
+- **Authorize** publication schedule
 
-**Week 3-4**: Core Development
-- Homepage & key pages
-- SEO implementation
-- Analytics setup
-- Basic conversion elements
+### Phase 4: Growth & Optimization
+- **Review** analytics insights
+- **Select** optimization priorities
+- **Approve** A/B test implementations
 
-**Week 5-6**: Optimization
-- Conversion funnel refinement
-- A/B testing setup
-- Performance optimization
-- Content creation
+## 📁 Project Structure
+```
+├── input/
+│   ├── website-requirement.md     # Website specifications
+│   └── content-requirement.md     # Content strategy
+├── template/execute/               # 10-step execution templates
+│   ├── 0_environment-setup.md     # Validate tools
+│   ├── 1_requirements-discovery.md # Clarifying questions
+│   ├── 2_design-document.md       # Staged plan
+│   ├── 3_implementation-stages.md # To-do driven dev
+│   ├── 4_testing-validation.md    # Quality assurance
+│   ├── 5_production-deployment.md # Go live
+│   ├── 6_content-strategy.md      # Content planning
+│   ├── 7_content-production.md    # Content creation
+│   ├── 8_content-distribution.md  # Publishing
+│   ├── 9_growth-analytics.md      # Data analysis
+│   └── 10_growth-execution.md     # Optimizations
+├── output/
+│   ├── docs/                      # Documentation
+│   │   ├── requirements/          # PRDs
+│   │   └── strategy/              # Design docs
+│   ├── website/                   # Your website code
+│   ├── content/                   # Content pipeline
+│   └── growth/                    # Analytics & experiments
+```
 
-**Week 7-8**: Launch & Monitor
-- Testing & QA
-- Deployment
-- Monitoring setup
-- Initial optimizations
+## 🔄 Process Flow
 
-### 🔥 Success Metrics:
+### 4-Phase System:
+**Discovery** → **Development** → **Content** → **Growth**
 
-**Month 1 Targets:**
-- 1,000+ visitors
-- 2% conversion rate
-- Core Web Vitals passing
+### Key Methodology:
+- **Clarifying Questions**: AI asks until 95% understanding
+- **Staged Implementation**: Break into manageable chunks
+- **To-Do Driven**: Clear task lists for each stage
+- **Human Checkpoints**: Approval at every major step
+- **Continuous Feedback**: Real-time collaboration
 
-**Month 3 Targets:**
-- 5,000+ visitors
-- 4% conversion rate
-- Top 20 search rankings
+## 📚 Documentation
+- **`CLAUDE.md`** - Complete methodology and detailed instructions
+- **`template/execute/`** - Step-by-step execution templates  
+- **`output/docs/strategy/`** - Technical documentation and progress tracking
 
-**Month 6 Targets:**
-- 15,000+ visitors
-- 6%+ conversion rate
-- Top 10 search rankings
+## 🚀 Getting Started
 
-### 💡 Pro Tips:
+### For Complete System (Website + Content):
+1. **Define** both requirement files in `input/`
+2. **Execute** Steps 0-5 for website
+3. **Launch** Step 6 for viral content
+4. **Scale** with Step 7 optimization
 
-1. **Start with clear goals** - What action do you want visitors to take?
-2. **Focus on value proposition** - Why should visitors choose you?
-3. **Test everything** - Let data drive decisions
-4. **Monitor continuously** - Set up alerts for issues
-5. **Iterate based on data** - Continuous improvement
-
-### 🚨 Common Mistakes to Avoid:
-
-- ❌ Launching without analytics
-- ❌ Ignoring mobile users
-- ❌ Slow page load times
-- ❌ Complex conversion paths
-- ❌ No social proof
-
-### When to Use This System:
-
-**Perfect for:**
-- E-commerce sites
-- SaaS landing pages
-- Lead generation sites
-- Service business websites
-- Content/blog sites with monetization
-
-**Not ideal for:**
-- Simple brochure sites (overkill)
-- Internal tools (no SEO needed)
-- Temporary campaign pages
-
-### Need Help?
-
-- Check `CLAUDE.md` for detailed process
-- Review templates in `template/execute/`
-- Test with real users early
-- Monitor analytics daily after launch
+### For Content Only:
+1. **Fill** `input/content-requirement.md`
+2. **Execute** Step 6 directly
+3. **Monitor** daily dashboard
+4. **Scale** winners with Step 7
 
 ---
 
-**Ready to build a high-converting website?** Start by filling out `input/website-requirement.md`!
+**New!** Viral content system with Oda's narrative genius + Sabrina's viral methodology. Start creating content that converts!
