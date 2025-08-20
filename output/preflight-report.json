@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-08-20T08:08:26.317Z",
+  "environment": {
+    "node": "v22.18.0",
+    "npm": "10.9.3",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "git": {
+    "configured": true,
+    "branch": "dev/franky-comedy",
+    "cleanWorkingTree": false
+  },
+  "mcp": {
+    "puppeteer": false,
+    "context7": false
+  },
+  "errors": []
+}
