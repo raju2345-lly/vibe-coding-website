@@ -8,10 +8,10 @@
 **Target Market**: Adults 25-50, general comedy audience, social media users
 
 ### Business Objectives
-- **Primary Goal**: Create viral entertainment content with 100K+ views per video
-- **Secondary Goals**: Build personal brand, audience engagement, platform growth
-- **Revenue Model**: Ad revenue, brand partnerships, merchandise, live shows
-- **Success Metrics**: Views (100K+), engagement rate (5%+), follower growth (10K/month)
+- **Primary Goal**: Create viral AI comedy content that drives social media followers
+- **Secondary Goals**: Build ComedyAI Studio brand, cross-platform audience growth, website traffic portal
+- **Revenue Model**: YouTube platform ads (NOT website ads), future merchandise
+- **Success Metrics**: 100K+ social media followers (12 months), 15% website-to-social conversion, 25K monthly website traffic
 
 ## 🎭 Content Strategy
 
@@ -47,13 +47,13 @@
 | TikTok | Short comedy videos | Daily | Primary growth |
 | YouTube Shorts | Vertical comedy | Daily | Secondary reach |
 | Instagram Reels | Comedy + stories | Daily | Engagement |
-| Website | Comedy showcase | Weekly | Portfolio |
+| Website | Comedy preview portal | Weekly | Traffic funnel to platforms |
 
 ### Platform-Specific Goals
 - **TikTok**: 100K followers in 6 months (PRIMARY)
 - **YouTube Shorts**: 50K subscribers, viral content
 - **Instagram**: 25K followers, high engagement
-- **Website**: Comedy portfolio and booking inquiries
+- **Website**: 25K monthly visitors, 15% social media conversion rate
 
 ## 🎬 Content Production Requirements
 
@@ -212,3 +212,25 @@
 
 **AI Agent Instructions**:
 This document drives all content planning and creation. Reference it for every content decision to ensure alignment with business goals and brand strategy.
+
+---
+
+## 🔍 CONTENT STRATEGY CLARIFICATIONS (Updated Jan 20, 2025)
+
+### Content Creation Status ✅
+- **Current Content Library**: NONE - No existing AI comedy videos ready
+- **Content Creation Process**: Will be established during Step 6 (Content Strategy)
+- **Website Launch Dependency**: Website can launch with placeholder/sample content initially
+- **Content Development**: Separate from website development, handled in content strategy phase
+
+### Website Content Role ✅
+- **Primary Purpose**: Preview/teaser content that drives users to full videos on social platforms
+- **Content Types**: Embedded video previews (15-30 seconds), not full content
+- **Content Management**: Manual curation of viral videos for website embedding
+- **Update Frequency**: Weekly website content updates once content pipeline established
+
+### Revenue Model Integration ✅
+- **Website Revenue**: $0 - No website ads, clean experience for social media conversion
+- **Platform Revenue**: YouTube ads from full video content on platforms
+- **Content Strategy Goal**: Drive social media followers, not website monetization
+- **Success Metric**: 15% website-to-social conversion rate (primary KPI)

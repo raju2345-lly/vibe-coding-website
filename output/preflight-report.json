@@ -1,10 +1,10 @@
 {
-  "timestamp": "2025-08-20T08:08:26.317Z",
+  "timestamp": "2025-08-20T11:53:05.493Z",
   "environment": {
-    "node": "v22.18.0",
-    "npm": "10.9.3",
+    "node": "v22.3.0",
+    "npm": "10.8.1",
     "platform": "darwin",
-    "arch": "arm64"
+    "arch": "x64"
   },
   "git": {
     "configured": true,
@@ -12,7 +12,7 @@
     "cleanWorkingTree": false
   },
   "mcp": {
-    "puppeteer": false,
+    "puppeteer": true,
     "context7": false
   },
   "errors": []

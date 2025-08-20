@@ -29,7 +29,7 @@ Select all that apply:
 - [ ] Build email list - Not implementing initially
 - [ ] Generate phone calls
 - [x] **Increase social media followers** - Drive TikTok/YouTube/Instagram traffic
-- [x] **Display ads revenue (AdSense)** - Monetize web traffic
+- [ ] **Display ads revenue (AdSense)** - NOT implementing website ads to avoid deterring users from visiting social channels
 - [x] **Future merchandise sales** - Platform ready for e-commerce expansion
 
 ### Success Metrics
@@ -37,7 +37,8 @@ Define your targets:
 - **Monthly Traffic Goal**: 25,000 visitors (from SEO and web traffic)
 - **Conversion Rate Target**: 15% (social media clicks - TikTok/YouTube)
 - **Social Traffic Target**: 3,750 monthly clicks to social channels
-- **AdSense Revenue**: $200-500/month from display ads
+- **Primary Revenue**: YouTube ads from platform (NOT website AdSense)
+- **Website Revenue**: $0 - Website is traffic portal, not monetization destination
 
 ## 👥 Target Audience
 
@@ -135,12 +136,13 @@ Choose primary model:
 - [ ] Direct sales - Future merchandise
 - [ ] Subscription/SaaS
 - [ ] Lead generation → Sales team
-- [x] **Advertising (AdSense/sponsors)** - Primary revenue stream
+- [x] **YouTube Platform Ads** - Primary revenue stream (platform-based, not website)
 - [ ] Affiliate marketing - Future potential
 - [ ] Freemium model
 
 ### Pricing Strategy
-- **Price Range**: Free content with ad revenue ($200-500/month target)
+- **Website**: 100% free content (no ads to avoid deterring social media traffic)
+- **Revenue Source**: YouTube ads ($200-500/month target from platform)
 - **Payment Options**: Future merchandise - Credit card, PayPal
 - **Promotions**: Free comedy content to drive social media traffic
 
@@ -168,7 +170,8 @@ Choose 3-5 traits:
 - [ ] Logo ready - **Need to create**: Playful AI+Comedy fusion logo
 - [ ] Brand guidelines exist - **Need to create**: Color palette, fonts, voice
 - [ ] Professional photos available - **Need to create**: AI-generated comedy visuals
-- [x] **Video content ready** - TikTok/YouTube comedy content for embedding
+- [ ] **Video content ready** - Will create content using template/execute/6_content-strategy.md process
+- [ ] **Content Creation Pipeline** - No existing library, will establish in Step 6 (Content Strategy)
 - [ ] Testimonials collected - **Future**: Fan comments and engagement
 - [ ] Case studies written - **Future**: Viral content success stories
 
@@ -177,7 +180,7 @@ Choose 3-5 traits:
 ### Integrations Needed
 - [x] **Google Analytics 4** - Track website traffic and user behavior
 - [ ] Google Tag Manager - Future implementation
-- [x] **Google AdSense** - Display ads for revenue generation
+- [ ] **Google AdSense** - NOT implementing website ads (avoids user deterrence from social platforms)
 - [ ] CRM system - Not needed initially
 - [ ] Email marketing - Not needed initially  
 - [ ] Payment processor - Future for merchandise
@@ -280,7 +283,7 @@ How will you keep customers?
 - Mobile-responsive design (mobile-first audience)
 - Video preview/samples that click through to original platforms
 - Clear "Watch Full Video on [Platform]" CTAs
-- AdSense integration for revenue
+- NO website ads (clean experience to drive social media traffic)
 - SEO optimization for "AI comedy" keywords
 
 ### Nice-to-Haves  
@@ -315,7 +318,58 @@ How will you keep customers?
 - [ ] Budget approved
 - [ ] Timeline agreed upon
 
+## 🔍 CRITICAL CLARIFICATIONS (Updated Jan 20, 2025)
+
+**These clarifications eliminate need for future questions during requirements discovery:**
+
+### Revenue Model Clarification ✅
+- **Primary Revenue**: YouTube ads from platform content (NOT website AdSense)
+- **Website Purpose**: Traffic funnel to social media platforms, NOT direct monetization
+- **Website Ads**: Explicitly NO website ads - clean experience drives better social media conversion
+- **Revenue Target**: $200-500/month from YouTube platform ads
+- **Traffic Strategy**: 100% organic (SEO, AI search, forums, Reddit, Facebook groups)
+- **Budget**: $0 - No paid advertising, no website monetization tools needed
+
+### Content Strategy Clarification ✅  
+- **Current Content Library**: None - will create using template/execute/6_content-strategy.md
+- **Content Creation**: Part of Step 6 (Content Strategy) process
+- **Website Content Role**: Showcase preview clips that drive users to full videos on platforms
+- **Content Management**: Manual curation of viral videos for embedding initially
+- **Content Pipeline**: Will be established in Step 6, not needed for initial website launch
+
+### Technical Integration Clarification ✅
+- **Social Media Embeds**: Preview clips that link to full videos on platforms
+- **Automation Level**: Manual curation of best content (no automated API pulling)
+- **CMS**: Not needed initially - direct HTML/component updates during development
+- **Content Updates**: Manual selection and embedding of viral videos to showcase
+
+### User Journey Clarification ✅
+- **Website Purpose**: Discovery portal, NOT bookmark destination
+- **User Flow**: Watch anchor videos → decide to view more → click to platforms → subscribe/follow
+- **Platform Priority**: Mobile-first (target audience uses smartphones primarily)
+- **Retention Strategy**: Users subscribe on social platforms, website drives discovery
+- **Return Visits**: Users may return for new content discovery, but platform engagement is primary goal
+
+### Website vs Social Media Role ✅
+- **Website**: Content discovery and preview portal
+- **Social Media**: Full content consumption and community engagement  
+- **Revenue Generation**: Social media platforms (YouTube ads)
+- **Community Building**: Social media platforms (comments, likes, shares)
+- **Content Creation**: AI-generated videos published on social platforms first
+- **Website Content**: Curated previews/samples with strong CTAs to platforms
+
+### Success Metrics Understanding ✅
+- **Primary Metric**: 15% conversion rate (website visitors → social media clicks)
+- **Traffic Goal**: 25,000 monthly website visitors (organic only)
+- **Social Conversion**: 3,750 monthly clicks to social platforms
+- **Platform Growth**: Measured on TikTok, YouTube, Instagram (not website metrics)
+- **Website Analytics**: Google Analytics 4 to track social media click-throughs
+- **Revenue Tracking**: YouTube analytics for ad revenue (not website-based)
+
+---
+
 **Ready to build your high-converting website?**
-1. Fill in all sections above
-2. Save this file
-3. Run: `Execute template/execute/1_website-prd.md`
+1. All requirements and clarifications documented above ✅
+2. Execute template/execute/0_environment-setup.md ✅ 
+3. Execute template/execute/1_requirements-discovery.md ✅
+4. Next step: Execute template/execute/2_design-document.md
