@@ -2,42 +2,42 @@
 
 ## Project Overview
 
-ComedyAI Studio is an innovative AI-powered comedy platform that will revolutionize how working professionals consume and interact with comedy content. The platform features multiple AI avatar characters delivering personalized comedy through an interactive TikTok-style interface, targeting rapid audience growth and lifestyle brand partnerships within 30 days.
+ComedyAI Studio is a mobile-first AI comedy discovery portal that serves as a traffic funnel to social media platforms (TikTok, YouTube, Instagram). The website showcases AI-generated comedy content previews to convert visitors into social media followers, focusing on the 25-50 demographic seeking quick entertainment and stress relief.
 
-**Key Innovation**: First platform to combine AI avatar personalities + interactive comedy generation + professional audience targeting in a dedicated comedy community.
+**Key Innovation**: First AI comedy website that prioritizes social media conversion over direct monetization, creating a clean discovery experience that drives platform growth.
 
 ## Goals & Success Metrics
 
 ### Primary Goal
-Build comedy audience to 2,000 newsletter subscribers/month through viral AI-generated content and interactive user experiences.
+Drive social media traffic conversion by achieving 15% click-through rate from website visitors to TikTok/YouTube/Instagram platforms.
 
 ### KPIs & Timeline
-- **Month 1**: 25,000 visitors, 2,000 subscribers, viral social media presence
-- **Month 2**: $200+ revenue from lifestyle brand partnerships (food, fashion, travel)
-- **Month 3**: $500+ monthly revenue, 5+ active brand partnerships
+- **Month 1**: 10,000 visitors, 1,500 social media clicks, mobile-first experience
+- **Month 2**: First revenue target from YouTube platform ads (not website ads)
+- **Month 3**: 10,000+ monthly visitors, sustained 15% conversion rate
 
 ### Success Metrics
-- **Website Traffic**: 25,000 monthly visitors (8% conversion rate)
-- **Social Growth**: 10K TikTok followers/month, 25K Instagram followers
-- **Engagement**: 5%+ engagement rate, 3+ minutes average session
-- **Revenue**: $50 per 1,000 subscribers from brand partnerships
+- **Website Traffic**: 10,000 monthly visitors (organic SEO)
+- **Social Conversion**: 15% click-through rate to platforms
+- **Mobile Traffic**: 60%+ mobile users (target audience behavior)
+- **Revenue**: YouTube platform ads (not website monetization)
 
 ## Implementation Stages
 
-### Stage 1: Foundation Setup (Days 1-4)
-**Goal**: Establish project infrastructure and core comedy showcase
+### Stage 1: Foundation & Setup (Days 1-7)
+**Goal**: Establish mobile-first website infrastructure and basic structure
 
 #### To-Do List:
 - [ ] Initialize Next.js 14 project with TypeScript and Tailwind CSS
-- [ ] Set up project structure (components, lib, api routes)
+- [ ] Set up project structure (components, lib, pages)
 - [ ] Configure development environment (ESLint, Prettier, Git)
-- [ ] Create responsive navigation and layout components
-- [ ] Implement basic video player component for comedy content
-- [ ] Set up Supabase database with Prisma ORM
-- [ ] Configure authentication system (Google OAuth + email)
-- [ ] Create landing page with hero section and value proposition
+- [ ] Create mobile-first responsive navigation and layout
+- [ ] Implement video preview component for social media embeds
+- [ ] Set up basic homepage with ComedyAI Studio branding
+- [ ] Create About Us, Contact, Privacy Policy, Terms pages
+- [ ] Configure Google Analytics 4 for conversion tracking
 - [ ] Add environment variables and security headers
-- [ ] Deploy to Vercel with custom domain setup
+- [ ] Deploy to Vercel with domain setup
 
 #### Success Criteria:
 - Development environment fully functional
@@ -46,102 +46,99 @@ Build comedy audience to 2,000 newsletter subscribers/month through viral AI-gen
 - Database connected and authentication working
 - Deployed to production with HTTPS
 
-### Stage 2: AI Comedy System (Days 5-8)
-**Goal**: Implement core AI comedy generation and character system
+### Stage 2: Social Media Integration (Days 8-15)
+**Goal**: Implement social platform embeds and conversion CTAs
 
 #### To-Do List:
-- [ ] Integrate OpenAI GPT-4 API for comedy script generation
-- [ ] Create 4 AI comedy characters with distinct personalities:
-  - The Observational Oracle (workplace humor)
-  - The Trendy Commentator (current events)
-  - The Lifestyle Guru (food/fashion/travel)
-  - The Millennial Mood (generational humor)
-- [ ] Build interactive comedy generator form with topic input
-- [ ] Implement character selection and comedy style options
-- [ ] Create comedy script processing and formatting system
-- [ ] Add rate limiting for AI API calls (10 generations/hour)
-- [ ] Build comedy content database schema and storage
-- [ ] Create avatar placeholders using Ready Player Me (free tier)
-- [ ] Implement basic text-to-speech for character voices
-- [ ] Add comedy content sharing and save functionality
+- [ ] Integrate TikTok embed API for video previews
+- [ ] Integrate YouTube embed API for Shorts previews
+- [ ] Integrate Instagram embed API for Reels previews
+- [ ] Create platform-specific CTA buttons ("Follow on TikTok", "Subscribe on YouTube")
+- [ ] Implement social media click tracking for conversion analytics
+- [ ] Build comedy content preview gallery with platform links
+- [ ] Add lazy loading for video embeds to improve performance
+- [ ] Create mobile-optimized video player controls
+- [ ] Implement fallback for failed embeds (static thumbnails with external links)
+- [ ] Add social sharing buttons for website content
 
 #### Success Criteria:
-- Users can input topics and generate personalized comedy
-- 4 distinct AI characters with different comedy styles
-- Comedy generation works within 30-second response time
-- Generated content is saved and shareable
-- Basic avatar representation for each character
+- TikTok, YouTube, Instagram video previews display correctly
+- Platform-specific CTAs drive clicks to social accounts
+- Conversion tracking accurately measures social media clicks
+- Mobile users can seamlessly switch to platform apps
+- All embeds load within 3 seconds on mobile
 
-### Stage 3: Content Hub & Community (Days 9-12)
-**Goal**: Build TikTok-style content feed and community features
+### Stage 3: Content Showcase & SEO (Days 16-23)
+**Goal**: Build comedy gallery and optimize for organic discovery
 
 #### To-Do List:
-- [ ] Create trending/most popular content feed interface
-- [ ] Implement infinite scroll for video content discovery
-- [ ] Build video analytics system (views, likes, shares)
-- [ ] Add comment system with moderation capabilities
-- [ ] Create user profiles and content interaction features
-- [ ] Implement social sharing buttons (TikTok, Instagram, Twitter)
-- [ ] Build newsletter signup system with email automation
-- [ ] Add content categorization and search functionality
-- [ ] Create "Generate Similar" feature for related comedy
-- [ ] Implement content reporting and safety measures
-- [ ] Add Google Analytics 4 and custom event tracking
-- [ ] Build admin dashboard for content management
+- [ ] Create comedy gallery showcasing AI-generated content samples
+- [ ] Implement SEO optimization for "AI comedy" keywords
+- [ ] Add structured data (schema markup) for video content
+- [ ] Create sitemap.xml and robots.txt for search engines
+- [ ] Optimize meta tags, Open Graph, and Twitter cards
+- [ ] Implement Core Web Vitals optimization (LCP, INP, CLS)
+- [ ] Add content categorization (viral, trending, new)
+- [ ] Create search functionality for comedy content discovery
+- [ ] Implement image optimization (WebP, lazy loading)
+- [ ] Add FAQ section in About Us page (per updated requirements)
+- [ ] Create blog section for comedy insights and SEO content
+- [ ] Optimize mobile performance and touch interactions
 
 #### Success Criteria:
-- Trending feed displays most engaging comedy content
-- Users can comment, like, and share individual videos
-- Newsletter signup conversion rate >8%
-- Search and categorization help content discovery
-- Analytics track all user interactions
+- Comedy gallery displays video previews with clear platform CTAs
+- SEO optimization targets "AI comedy" and related keywords
+- Core Web Vitals pass Google PageSpeed Insights
+- Mobile experience optimized for 60%+ mobile traffic
+- Search functionality helps users discover relevant content
 
-### Stage 4: Monetization & Optimization (Days 13-16)
-**Goal**: Enable revenue generation and optimize for performance
+### Stage 4: Optimization & Polish (Days 24-28)
+**Goal**: Performance optimization and final feature refinement
 
 #### To-Do List:
-- [ ] Integrate Google AdSense for display advertising
-- [ ] Build brand partnership inquiry and management system
-- [ ] Create sponsored content integration for lifestyle brands
-- [ ] Implement affiliate marketing capabilities
-- [ ] Add premium features for subscribers (exclusive content)
-- [ ] Optimize Core Web Vitals (LCP <1.8s, INP <200ms, CLS <0.1)
-- [ ] Implement advanced caching with Redis
-- [ ] Add video compression and CDN optimization
-- [ ] Create A/B testing framework for conversion optimization
-- [ ] Build comprehensive SEO meta tags and schema markup
-- [ ] Implement email marketing automation sequences
-- [ ] Add social media auto-posting capabilities
+- [ ] A/B test CTA button designs and placement for higher conversion
+- [ ] Optimize loading speed for mobile users (target <3 seconds)
+- [ ] Implement advanced caching strategies
+- [ ] Add error handling and fallbacks for failed embeds
+- [ ] Create 404 page with comedy content and navigation
+- [ ] Implement GDPR/CCPA compliance for privacy regulations
+- [ ] Add security headers and SSL configuration
+- [ ] Optimize analytics tracking for conversion measurement
+- [ ] Create contact form with anti-spam protection
+- [ ] Add accessibility features (WCAG compliance)
+- [ ] Test cross-browser compatibility (Chrome, Safari, Firefox)
+- [ ] Implement social media preview optimization
 
 #### Success Criteria:
-- AdSense displaying relevant ads without affecting UX
-- Brand partnership inquiry system functional
-- Page load times <2 seconds on all devices
-- SEO optimization drives organic traffic
-- Email automation nurtures subscribers to engagement
+- Website loads in <3 seconds on mobile 3G connections
+- 15% conversion rate achieved through optimized CTAs
+- Cross-browser compatibility verified
+- GDPR compliance and privacy features functional
+- Accessibility standards met for inclusive access
 
-### Stage 5: Testing & Launch Preparation (Days 17-18)
-**Goal**: Comprehensive quality assurance and launch readiness
+### Stage 5: Testing & Launch Preparation (Days 29-30)
+**Goal**: Final quality assurance and production launch
 
 #### To-Do List:
 - [ ] Cross-browser testing (Chrome, Safari, Firefox, Edge)
-- [ ] Mobile responsiveness testing on multiple devices
-- [ ] Performance testing with Lighthouse (target >95 score)
-- [ ] Security audit and penetration testing
-- [ ] Load testing for expected traffic volumes
-- [ ] Content moderation system testing
-- [ ] AI generation system stress testing
-- [ ] Email delivery and automation testing
-- [ ] Social sharing functionality verification
-- [ ] Analytics tracking validation
-- [ ] User acceptance testing with beta users
-- [ ] Final content review and approval
+- [ ] Mobile responsiveness testing on iOS and Android devices
+- [ ] Performance testing with Lighthouse (target >90 score)
+- [ ] Social media embed functionality verification
+- [ ] Conversion tracking accuracy validation
+- [ ] SEO meta tags and structured data verification
+- [ ] Google Analytics 4 event tracking testing
+- [ ] Form submission and contact functionality testing
+- [ ] Social media CTA click tracking validation
+- [ ] Core Web Vitals performance verification
+- [ ] Final content review and human approval
+- [ ] Production deployment and monitoring setup
 
 #### Success Criteria:
-- All functionality works perfectly across devices/browsers
-- Performance scores meet targets (98+ PageSpeed)
-- Security vulnerabilities identified and fixed
-- Ready for public launch with monitoring in place
+- All social media embeds and CTAs function correctly
+- Performance targets met (90+ Lighthouse score)
+- Conversion tracking accurately measures social clicks
+- Mobile-first experience optimized for target audience
+- Ready for public launch with analytics monitoring
 
 ## Technical Architecture
 
@@ -338,16 +335,16 @@ Build comedy audience to 2,000 newsletter subscribers/month through viral AI-gen
 
 ## Timeline Summary
 
-**Total Development Time**: 18 days
-- **Stage 1**: 4 days (Foundation)
-- **Stage 2**: 4 days (AI Comedy System)  
-- **Stage 3**: 4 days (Content Hub)
-- **Stage 4**: 4 days (Monetization)
+**Total Development Time**: 30 days
+- **Stage 1**: 7 days (Foundation & Setup)
+- **Stage 2**: 8 days (Social Media Integration)
+- **Stage 3**: 8 days (Content Showcase & SEO)
+- **Stage 4**: 5 days (Optimization & Polish)
 - **Stage 5**: 2 days (Testing & Launch)
 
-**Launch Target**: Day 19
-**First Revenue Target**: Day 30
-**Scale Milestone**: Day 90 (sustainable growth achieved)
+**Launch Target**: Day 30
+**First Revenue Target**: Day 60 (YouTube platform ads)
+**Scale Milestone**: Day 120 (sustained organic growth)
 
 ## Next Steps
 

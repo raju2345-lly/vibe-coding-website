@@ -2,7 +2,7 @@
 
 ## Executive Summary
 **Project Name:** ComedyAI Studio Website - AI Comedy Discovery Portal  
-**Launch Timeline:** 1 month (February 2025)  
+**Launch Timeline:** 1 month (September 2025)  
 **Budget:** $0 (Free resources only)  
 **Primary Purpose:** Social media traffic portal to drive TikTok/YouTube/Instagram conversions
 
@@ -43,14 +43,14 @@
 ### Primary Conversion Goal
 **Drive Social Media Traffic** - Convert website visitors to platform subscribers
 - **Target Conversion Rate:** 15% (visitors → social media clicks)
-- **Monthly Social Traffic Target:** 3,750 clicks to social platforms
+- **Monthly Social Traffic Target:** 1,500 clicks to social platforms
 - **Success Metric:** Platform follower growth, not website monetization
 
 ### Secondary Goals
 1. **Build Brand Awareness** - Establish ComedyAI Studio as go-to AI comedy brand
 2. **Increase Social Media Followers** - Drive growth on TikTok, YouTube, Instagram
 3. **Future E-commerce Platform** - Ready for merchandise expansion
-4. **Organic Traffic Growth** - 25,000 monthly visitors via SEO and AI search
+4. **Organic Traffic Growth** - 10,000 monthly visitors via SEO and AI search
 
 ### Revenue Model Clarification
 - **Primary Revenue:** YouTube ads (platform-based, not website)
@@ -59,9 +59,9 @@
 - **AdSense Strategy:** NOT implementing website ads (avoid user deterrence)
 
 ### Success Metrics & KPIs
-- **Monthly Website Traffic:** 25,000 visitors (organic only)
+- **Monthly Website Traffic:** 10,000 visitors (organic only)
 - **Social Conversion Rate:** 15% click-through to platforms  
-- **Monthly Social Clicks:** 3,750 to TikTok/YouTube/Instagram
+- **Monthly Social Clicks:** 1,500 to TikTok/YouTube/Instagram
 - **Platform Growth:** Measured on social platforms, not website
 - **User Behavior:** Discovery portal usage, not retention destination
 
@@ -140,12 +140,10 @@
 - **Terms of Service** - Required for website legal protection
 
 #### Content Pages:
-- **Comedy Gallery** - Featured TikTok/YouTube content embeds
-- **FAQ** - Simple comedy FAQ (what is AI comedy, etc.)
+- **Comedy Gallery** - Featured TikTok/YouTube content embeds (with About Us section)
 
 #### Future Pages:
 - **Products/Services** - Placeholder for future merchandise
-- **Newsletter Signup** - Future email list building
 
 ### 5. Technical Architecture
 
@@ -218,9 +216,9 @@
 ## Success Metrics & Validation
 
 ### Primary Success Metrics:
-- **Monthly website traffic:** 25,000 visitors (organic)
+- **Monthly website traffic:** 10,000 visitors (organic)
 - **Social conversion rate:** 15% (website visitors → platform clicks)
-- **Monthly social traffic:** 3,750 clicks to platforms
+- **Monthly social traffic:** 1,500 clicks to platforms
 - **Platform growth:** Follower increases on TikTok/YouTube/Instagram
 - **Mobile traffic percentage:** > 60% (target audience behavior)
 
@@ -272,7 +270,7 @@
 ✅ **Business goals clearly defined** - Social media traffic conversion  
 ✅ **Target audience identified** - 25-50 year old professionals, mobile-first  
 ✅ **Technical requirements specified** - Next.js, mobile-first, analytics  
-✅ **Success metrics established** - 15% conversion rate, 25K monthly traffic  
+✅ **Success metrics established** - 15% conversion rate, 10K monthly traffic  
 ✅ **Timeline realistic** - 1 month development, $0 budget  
 
 ### Immediate Next Steps:

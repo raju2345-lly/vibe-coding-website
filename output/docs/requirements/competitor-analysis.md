@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-**Analysis Date:** January 20, 2025  
+**Analysis Date:** August 27, 2025  
 **Analysis Focus:** Comedy content creators and websites targeting 25-50 demographic  
 **Key Finding:** Opportunity for AI-first comedy portal bridging traditional comedians and social media platforms
 
@@ -14,13 +14,13 @@
 |------------|----------------|---------------|--------------|------------------|--------------|
 | **Khaby Lame** | TikTok/Instagram | 161M+ followers | Visual comedy, no speech | Minimal website presence | Brand partnerships |
 | **Smosh** | YouTube/Web | 25M+ subscribers | Sketch comedy, gaming | Content hub website | Ad revenue, merchandise |
-| **CollegeHumor** | YouTube/Web | 14.6M+ subscribers | Millennial humor, sketches | Video-centric website | Subscription, ads |
+| **Dropout** | YouTube/Web | 15M+ subscribers | Millennial humor, sketches | Subscription platform | Subscription, limited ads |
 | **Clickhole** | Web/Social | 3M+ followers | Satirical articles, viral content | Article-based website | Ad revenue, clickbait |
 | **Trevor Noah** | Multi-platform | 10M+ followers | Stand-up, commentary | Professional portfolio site | Speaking, TV deals |
 
 ## Detailed Competitor Analysis
 
-### 1. Khaby Lame (@khaby00)
+### 1. Khaby Lame (@khaby.lame on TikTok, @khaby00 on Instagram)
 
 **Overview:** Global comedy sensation with universal, wordless humor
 - **Followers:** 161M TikTok, 80M Instagram
@@ -91,15 +91,17 @@
 - ✅ Multi-platform presence with primary focus
 - ❌ Need sustainable content creation method
 
-### 3. CollegeHumor
+### 3. Dropout (formerly CollegeHumor)
 
-**Overview:** Millennial-focused comedy website and video platform
-- **Subscribers:** 14.6M+ YouTube, 2M+ other platforms  
-- **Content Style:** Millennial workplace humor, sketches, articles
+**Overview:** Rebranded comedy platform focused on subscription content
+- **Subscribers:** 15M+ YouTube, 2M+ other platforms  
+- **Content Style:** Millennial workplace humor, sketches, subscription content
 - **Target Audience:** 22-35, college-educated professionals
+- **Note:** No TikTok presence, focuses on YouTube and own platform
 
 **Website Analysis:**
-- **Website:** collegehumor.com - Video and article hybrid
+- **Website:** dropout.tv/browse - Subscription-based content platform
+- **Instagram:** instagram.com/dropouttv
 - **Strategy:** Content destination with social distribution
 - **User Experience:** Clean, article-focused layout with video sections
 - **Conversion:** Keep users on-site, then drive to social
@@ -306,7 +308,7 @@ Website-First   │  CollegeHumor        │  [FUTURE EXPANSION]
 ### Benchmark Targets
 
 **Traffic Comparison:**
-- **Target:** 25,000 monthly visitors (Month 6)
+- **Target:** 10,000 monthly visitors (Month 6)
 - **Clickhole:** ~500K monthly (industry leader)
 - **CollegeHumor:** ~200K monthly
 - **Trevor Noah:** ~50K monthly
