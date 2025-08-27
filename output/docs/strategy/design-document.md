@@ -50,9 +50,9 @@ Drive social media traffic conversion by achieving 15% click-through rate from w
 **Goal**: Implement social platform embeds and conversion CTAs
 
 #### To-Do List:
-- [ ] Integrate TikTok embed API for video previews
-- [ ] Integrate YouTube embed API for Shorts previews
-- [ ] Integrate Instagram embed API for Reels previews
+- [ ] Implement TikTok public embed URLs for video previews (no API key needed)
+- [ ] Implement YouTube public embed URLs for Shorts previews (no API key needed)  
+- [ ] Implement Instagram public embed URLs for Reels previews (no API key needed)
 - [ ] Create platform-specific CTA buttons ("Follow on TikTok", "Subscribe on YouTube")
 - [ ] Implement social media click tracking for conversion analytics
 - [ ] Build comedy content preview gallery with platform links
@@ -152,22 +152,20 @@ Drive social media traffic conversion by achieving 15% click-through rate from w
 - React Hook Form + Zod - Form handling with validation
 ```
 
-**AI & Media Integration:**
+**Media Integration:**
 ```typescript
-- OpenAI GPT-4 API - Advanced comedy script generation
-- Ready Player Me - Free 3D avatar creation and customization
-- Eleven Labs API - Natural voice synthesis (optional premium feature)
-- FFmpeg.js - Client-side video processing and optimization
-- Next.js Image/Video - Optimized media delivery
+- Public Embed URLs - TikTok, YouTube, Instagram (no API keys needed)
+- Next.js Image/Video - Optimized media delivery and caching
+- Lazy Loading - Intersection Observer for performance
+- Manual Content Curation - Human-selected viral videos
 ```
 
-**Backend & Database:**
+**Backend & Deployment:**
 ```typescript
-- Vercel Functions - Serverless API endpoints
-- Supabase PostgreSQL - Scalable database with real-time features
-- Prisma ORM - Type-safe database operations
-- Redis (Upstash) - Caching and session management
-- NextAuth.js - Authentication with multiple providers
+- Vercel Hosting - Static site generation and deployment
+- No Database Needed - Static content with manual updates
+- No Authentication - Public website, no user accounts required
+- Static File Management - Content updates via git deployments
 ```
 
 **Performance & Analytics:**
@@ -178,56 +176,54 @@ Drive social media traffic conversion by achieving 15% click-through rate from w
 - Sentry - Error tracking and performance monitoring
 ```
 
-### Database Architecture
+### Content Management Architecture
 
-**Core Tables:**
-- **Users**: Authentication, preferences, subscription status
-- **Characters**: AI personalities with unique traits and voices
-- **Videos**: Comedy content with metadata and analytics
-- **Generated_Content**: User-created comedy with AI assistance
-- **Comments**: Community engagement and moderation
-- **Analytics**: Detailed event tracking for optimization
-- **Newsletter**: Email list management and segmentation
+**Static Content Approach:**
+- **Video Embeds**: Hardcoded public embed URLs in React components
+- **Content Updates**: Manual git commits for new content
+- **No Database**: All content statically managed
+- **Analytics**: Google Analytics 4 for tracking (no custom database)
+- **Future Expansion**: Can add CMS later if needed
 
-### API Design
+### Static Site Architecture
 
-**Key Endpoints:**
-- `POST /api/generate-comedy` - AI script generation with rate limiting
-- `GET /api/videos/trending` - Dynamic trending content algorithm
-- `POST /api/comments` - Community interaction with moderation
-- `GET /api/analytics/performance` - Real-time metrics dashboard
-- `POST /api/newsletter/subscribe` - Email list growth tracking
+**No APIs Needed:**
+- **Static Generation**: All content pre-built at deploy time
+- **Client-side Tracking**: Google Analytics 4 handles all analytics
+- **No Server Endpoints**: Pure static site with external embeds
+- **Content Updates**: Deploy new version for content changes
+- **Future APIs**: Can add server functions if needed for expansion
 
 ## Risk Mitigation Plan
 
 ### Technical Risks
 
-#### Risk 1: AI API Rate Limits and Costs
-**Impact**: High usage could exceed free tiers, blocking core functionality
+#### Risk 1: Embed Platform Changes
+**Impact**: Social media platforms could change embed policies
 **Mitigation Strategies**:
-- Implement intelligent caching for common comedy topics
-- User rate limiting (10 generations per hour for free users)
-- Fallback to pre-generated content during high demand
-- Multiple AI provider integration for redundancy
-- Upgrade to paid tiers based on usage metrics
+- Use public embed URLs (most stable)
+- Implement fallback to direct links if embeds fail
+- Monitor platform terms of service changes
+- Test embeds regularly for functionality
+- Keep platform links as backup
 
-#### Risk 2: Video Bandwidth and Storage Costs
-**Impact**: High-quality video content could lead to expensive CDN bills
+#### Risk 2: Content Availability
+**Impact**: Limited initial content could affect user engagement
 **Mitigation Strategies**:
-- Aggressive video compression without quality loss
-- Multiple resolution variants for adaptive streaming
-- Lazy loading and progressive enhancement
-- CDN optimization with proper caching headers
-- Monitor usage and implement cost alerts
+- Start with placeholder/demo content for website launch
+- Manual curation of viral videos for preview
+- Content creation handled separately in Step 6
+- Website can launch before content pipeline is ready
+- Use free sample content initially
 
-#### Risk 3: Performance Under Load
-**Impact**: Slow loading times could hurt user experience and SEO
+#### Risk 3: Embed Loading Performance
+**Impact**: Slow embed loading could hurt user experience and SEO
 **Mitigation Strategies**:
-- Comprehensive performance monitoring with alerts
-- CDN caching for static assets and API responses
-- Database query optimization and connection pooling
-- Gradual feature rollout to monitor performance impact
-- Load testing before major traffic spikes
+- Lazy loading for video embeds (load only when visible)
+- Static site optimization with Vercel CDN
+- Lightweight page structure, minimal JavaScript
+- Fallback thumbnails if embeds fail to load
+- Monitor Core Web Vitals regularly
 
 ### Business Risks
 
@@ -240,14 +236,14 @@ Drive social media traffic conversion by achieving 15% click-through rate from w
 - Referral programs and viral sharing incentives
 - Content partnerships with existing comedy creators
 
-#### Risk 5: AI-Generated Content Quality Issues
-**Impact**: Poor comedy quality could damage brand reputation
+#### Risk 5: Manual Content Curation Challenges
+**Impact**: Manual content selection could be time-consuming
 **Mitigation Strategies**:
-- Human review system for generated content
-- User feedback integration to improve AI prompts
-- Multiple character personalities to diversify content
-- Community voting and curation features
-- Continuous AI model fine-tuning based on user preferences
+- Start with small content library for MVP
+- Focus on quality over quantity initially
+- Content creation pipeline established in Step 6
+- Website serves as discovery portal, not content destination
+- Can automate curation in future phases
 
 #### Risk 6: Brand Partnership Delays
 **Impact**: Revenue targets might not be met within timeline
