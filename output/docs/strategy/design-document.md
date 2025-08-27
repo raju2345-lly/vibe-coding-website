@@ -81,7 +81,6 @@ Drive social media traffic conversion by achieving 15% click-through rate from w
 - [ ] Add content categorization (viral, trending, new)
 - [ ] Create search functionality for comedy content discovery
 - [ ] Implement image optimization (WebP, lazy loading)
-- [ ] Add FAQ section in About Us page (per updated requirements)
 - [ ] Create blog section for comedy insights and SEO content
 - [ ] Optimize mobile performance and touch interactions
 
