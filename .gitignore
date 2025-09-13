@@ -42,3 +42,8 @@ out/
 # Temporary files
 tmp/
 temp/
+.vercel
+
+# Hide outer documentation files for vibe-coding-website repository
+CLAUDE.md
+README.md
