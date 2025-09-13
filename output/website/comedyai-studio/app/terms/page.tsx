@@ -18,7 +18,8 @@ export default function TermsPage() {
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none text-gray-800 text-justify">
+        <div className="bg-white rounded-2xl p-8 shadow-lg text-gray-800">
+          <div className="prose prose-lg max-w-none [&>p]:text-justify [&>p]:leading-relaxed [&>li]:text-justify [&>li]:leading-relaxed [&>h2]:text-left [&>h3]:text-left">
           <h2>Agreement to Terms</h2>
           <p>
             By accessing ComedyAI Studio, you agree to be bound by these Terms of Service 
@@ -107,6 +108,7 @@ export default function TermsPage() {
             These Terms of Service are governed by and construed in accordance 
             with applicable laws. Any disputes shall be resolved through appropriate legal channels.
           </p>
+          </div>
         </div>
       </div>
     </div>
