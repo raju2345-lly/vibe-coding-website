@@ -286,12 +286,17 @@ We welcome contributions! Please follow these steps:
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 **Franky Halim**
 - GitHub: [@halim-franky](https://github.com/halim-franky)
 - Website: [ai-comedy.skillcatcher.com](https://ai-comedy.skillcatcher.com)
 - Project: [vibe-coding-website](https://github.com/halim-franky/vibe-coding-website)
+
+**Christ Lestario**
+- GitHub: [@christlestario](https://github.com/christlestario)
+- Website: [https://github.com/christlestario](https://github.com/christlestario)
+- Original Repository: [vibecode-websites](https://github.com/christlestario/vibecode-websites)
 
 ## 🙏 Acknowledgments
 
