@@ -48,3 +48,10 @@ temp/
 CLAUDE.md
 VIBE-CODING-README.md
 # README.md now shows project documentation on GitHub
+
+# Hide development/template folders and files for clean project focus
+history/
+input/
+template/
+test/
+preflight-check.js
