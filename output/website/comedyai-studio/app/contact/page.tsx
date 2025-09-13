@@ -17,29 +17,39 @@ export default function ContactPage() {
     e.preventDefault()
     setFormState('loading')
 
-    try {
-      // Using Formspree (free, secure form handling service)
-      // You'll need to replace this with your actual Formspree form ID
-      const response = await fetch('https://formspree.io/f/comedyai-contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          _replyto: formData.email,
-          _subject: `New message from ${formData.name} - ComedyAI Studio`
-        })
-      })
+    // Client-side validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      setFormState('error')
+      return
+    }
 
-      if (response.ok) {
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(formData.email)) {
+      setFormState('error')
+      return
+    }
+
+    try {
+      // Create a secure mailto link with pre-filled content
+      const subject = encodeURIComponent(`Contact from ${formData.name} - ComedyAI Studio`)
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Message:\n${formData.message}\n\n` +
+        `---\n` +
+        `Sent from ComedyAI Studio website`
+      )
+      
+      // Open mailto link
+      window.location.href = `mailto:comedyai099@gmail.com?subject=${subject}&body=${body}`
+      
+      // Show success message
+      setTimeout(() => {
         setFormState('success')
         setFormData({ name: '', email: '', message: '' })
-      } else {
-        setFormState('error')
-      }
+      }, 1000)
+      
     } catch (error) {
       console.error('Form submission error:', error)
       setFormState('error')
@@ -51,6 +61,10 @@ export default function ContactPage() {
       ...formData,
       [e.target.name]: e.target.value
     })
+    // Reset error state when user starts typing
+    if (formState === 'error') {
+      setFormState('idle')
+    }
   }
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50">
