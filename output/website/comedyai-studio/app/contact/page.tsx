@@ -116,7 +116,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition-colors"
                 >
-                  YouTube
+                  Subscribe Now
                 </a>
                 <a
                   href="https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMjIzNHExZQ%3D%3D&utm_source=qr"

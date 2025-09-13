@@ -36,7 +36,7 @@ export default function GalleryPage() {
               rel="noopener noreferrer"
               className="bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors"
             >
-              Subscribe on YouTube
+              Subscribe Now
             </a>
             <a
               href="https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMJIzNHExZQ%3D%3D&utm_source=qr"

@@ -208,7 +208,8 @@ export default function HomePage() {
                 avatar: '📱',
                 description: 'Short-form comedy videos perfect for your lunch break',
                 color: 'bg-black hover:bg-gray-800',
-                url: 'https://www.tiktok.com/@pureComedy.ai'
+                url: 'https://www.tiktok.com/@pureComedy.ai',
+                buttonText: 'Follow Now'
               },
               {
                 name: 'YouTube',
@@ -216,7 +217,8 @@ export default function HomePage() {
                 avatar: '📺',
                 description: 'Longer comedy content and behind-the-scenes insights',
                 color: 'bg-red-600 hover:bg-red-700',
-                url: 'https://www.youtube.com/@pureComedyAI'
+                url: 'https://www.youtube.com/@pureComedyAI',
+                buttonText: 'Subscribe Now'
               },
               {
                 name: 'Instagram',
@@ -224,7 +226,8 @@ export default function HomePage() {
                 avatar: '📸',
                 description: 'Visual comedy content and daily humor highlights',
                 color: 'bg-pink-600 hover:bg-pink-700',
-                url: 'https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMjIzNHExZQ%3D%3D&utm_source=qr'
+                url: 'https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMjIzNHExZQ%3D%3D&utm_source=qr',
+                buttonText: 'Follow Now'
               }
             ].map((platform, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
@@ -240,7 +243,7 @@ export default function HomePage() {
                     className={`w-full inline-flex items-center justify-center px-4 py-2 rounded-lg text-white font-semibold transition-colors ${platform.color}`}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Follow Now
+                    {platform.buttonText}
                   </a>
                 </div>
               </div>

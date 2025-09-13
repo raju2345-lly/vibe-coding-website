@@ -156,7 +156,7 @@ export default function VideoPlayer({
                 rel="noopener noreferrer"
                 className="block bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition-colors"
               >
-                Subscribe on YouTube
+                Subscribe Now
               </a>
             </div>
           </div>

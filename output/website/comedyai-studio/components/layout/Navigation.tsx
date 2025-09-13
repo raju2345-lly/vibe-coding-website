@@ -53,9 +53,9 @@ export default function Navigation() {
                 Follow on TikTok
               </a>
             </Button>
-            <Button asChild className="bg-white text-orange-500 hover:bg-yellow-100" size="sm">
+            <Button asChild className="bg-red-600 text-white hover:bg-red-700" size="sm">
               <a href="https://www.youtube.com/@pureComedyAI" target="_blank" rel="noopener noreferrer">
-                Subscribe
+                Subscribe Now
               </a>
             </Button>
           </div>
@@ -95,9 +95,9 @@ export default function Navigation() {
                   Follow on TikTok
                 </a>
               </Button>
-              <Button className="w-full bg-white text-orange-500 hover:bg-yellow-100" asChild>
+              <Button className="w-full bg-red-600 text-white hover:bg-red-700" asChild>
                 <a href="https://www.youtube.com/@pureComedyAI" target="_blank" rel="noopener noreferrer">
-                  Subscribe on YouTube
+                  Subscribe Now
                 </a>
               </Button>
             </div>

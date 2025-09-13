@@ -58,7 +58,7 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-center"
               >
-                Subscribe on YouTube
+                Subscribe Now
               </a>
               <a
                 href="https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMjIzNHExZQ%3D%3D&utm_source=qr"
