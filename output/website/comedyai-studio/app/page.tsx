@@ -1,16 +1,14 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import VideoPlayer from '@/components/comedy/VideoPlayer'
-import { trackSocialClick, trackNewsletterSignup } from '@/components/analytics/GoogleAnalytics'
+import { trackSocialClick } from '@/components/analytics/GoogleAnalytics'
 import { 
   Users, 
   Zap, 
   TrendingUp, 
   Play, 
-  ArrowRight,
   Star,
   ExternalLink
 } from 'lucide-react'
@@ -73,17 +71,6 @@ const testimonials = [
 ]
 
 export default function HomePage() {
-  const [email, setEmail] = useState('')
-
-  const handleNewsletterSignup = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Track newsletter signup
-    trackNewsletterSignup(email)
-    console.log('Newsletter signup:', email)
-    setEmail('')
-    alert('Thanks for signing up! 🎭')
-  }
-
   const handleSocialClick = (platform: string, url: string) => {
     trackSocialClick(platform, url)
   }
@@ -293,41 +280,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
-      <section className="py-20 bg-gradient-to-r from-yellow-400 to-orange-500">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Never Miss a Laugh
-            </h2>
-            <p className="text-xl text-gray-800">
-              Get our weekly comedy digest with the best AI-generated content, 
-              behind-the-scenes insights, and exclusive early access to new characters.
-            </p>
-            
-            <form onSubmit={handleNewsletterSignup} className="max-w-md mx-auto">
-              <div className="flex gap-3">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border-2 border-orange-500 bg-white text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 focus:outline-none transition-colors"
-                  required
-                />
-                <Button type="submit" className="bg-gray-900 hover:bg-gray-800 text-white" size="lg">
-                  Subscribe
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </div>
-            </form>
-
-            <p className="text-sm text-gray-700">
-              Join 2,000+ subscribers. Unsubscribe anytime.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

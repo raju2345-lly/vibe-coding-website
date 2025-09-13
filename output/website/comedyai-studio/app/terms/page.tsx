@@ -14,11 +14,11 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p className="text-lg text-gray-600">
-            Last updated: January 2025
+            Last updated: September 2025
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none">
+        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none text-gray-800">
           <h2>Agreement to Terms</h2>
           <p>
             By accessing ComedyAI Studio, you agree to be bound by these Terms of Service 

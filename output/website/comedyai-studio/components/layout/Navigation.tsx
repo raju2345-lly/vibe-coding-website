@@ -17,7 +17,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-orange-400 to-yellow-400 backdrop-blur-md border-b border-orange-300 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
@@ -27,8 +27,8 @@ export default function Navigation() {
               <Laugh className="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" />
               <Sparkles className="w-4 h-4 text-yellow-500 absolute -top-1 -right-1 animate-pulse" />
             </div>
-            <span className="text-xl font-bold text-gray-900">
-              Comedy<span className="text-orange-500">AI</span>
+            <span className="text-xl font-bold text-white">
+              Comedy<span className="text-yellow-100">AI</span>
             </span>
           </Link>
 
@@ -38,7 +38,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-1 text-gray-700 hover:text-orange-500 transition-colors group"
+                className="flex items-center space-x-1 text-white hover:text-yellow-100 transition-colors group"
               >
                 <item.icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 <span className="font-medium">{item.name}</span>
@@ -48,12 +48,12 @@ export default function Navigation() {
 
           {/* Social Media CTAs */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" asChild>
+            <Button variant="outline" size="sm" asChild className="border-white text-white hover:bg-white hover:text-orange-500">
               <a href="https://www.tiktok.com/@pureComedy.ai" target="_blank" rel="noopener noreferrer">
                 Follow on TikTok
               </a>
             </Button>
-            <Button asChild className="bg-red-600 hover:bg-red-700" size="sm">
+            <Button asChild className="bg-white text-orange-500 hover:bg-yellow-100" size="sm">
               <a href="https://www.youtube.com/@pureComedyAI" target="_blank" rel="noopener noreferrer">
                 Subscribe
               </a>
@@ -81,7 +81,7 @@ export default function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-2 text-gray-700 hover:text-orange-500 transition-colors py-2"
+                className="flex items-center space-x-2 text-white hover:text-yellow-100 transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
                 <item.icon className="w-4 h-4" />
@@ -89,13 +89,13 @@ export default function Navigation() {
               </Link>
             ))}
             
-            <div className="pt-4 border-t border-gray-200 space-y-2">
-              <Button variant="outline" className="w-full" asChild>
+            <div className="pt-4 border-t border-orange-300 space-y-2">
+              <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-orange-500" asChild>
                 <a href="https://www.tiktok.com/@pureComedy.ai" target="_blank" rel="noopener noreferrer">
                   Follow on TikTok
                 </a>
               </Button>
-              <Button className="w-full bg-red-600 hover:bg-red-700" asChild>
+              <Button className="w-full bg-white text-orange-500 hover:bg-yellow-100" asChild>
                 <a href="https://www.youtube.com/@pureComedyAI" target="_blank" rel="noopener noreferrer">
                   Subscribe on YouTube
                 </a>

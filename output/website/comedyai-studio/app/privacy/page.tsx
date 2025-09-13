@@ -14,11 +14,11 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-lg text-gray-600">
-            Last updated: January 2025
+            Last updated: September 2025
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none">
+        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none text-gray-800">
           <h2>Introduction</h2>
           <p>
             ComedyAI Studio ("we," "our," or "us") is committed to protecting your privacy. 
