@@ -266,9 +266,6 @@ vercel --prod
 - **v1.1** - Video gallery and content management
 - **v1.0** - Initial launch with core features
 
-## 📝 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Authors
 
