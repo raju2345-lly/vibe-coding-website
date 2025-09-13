@@ -57,3 +57,6 @@ test/
 preflight-check.js
 output/docs/
 output/preflight-report.json
+
+# Hide test screenshots from website project
+output/website/comedyai-studio/test/screenshots/
