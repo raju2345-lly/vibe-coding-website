@@ -9,6 +9,7 @@ interface Video {
   id: string
   title: string
   url: string
+  youtubeId?: string
   character: string
   duration: number
   views: number
@@ -108,8 +109,20 @@ export default function VideoPlayer({
       className
     )}>
       
-      {/* Video Element or Placeholder */}
-      {video.url ? (
+      {/* Video Element, YouTube Embed, or Placeholder */}
+      {video.youtubeId ? (
+        // YouTube Embed
+        <div className="w-full h-full relative">
+          <iframe
+            src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0`}
+            className="w-full h-full"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title={video.title}
+          />
+        </div>
+      ) : video.url ? (
         <video
           ref={videoRef}
           src={video.url}
@@ -150,8 +163,8 @@ export default function VideoPlayer({
         </div>
       )}
 
-      {/* Play/Pause Overlay - only show for actual videos */}
-      {video.url && (
+      {/* Play/Pause Overlay - only show for actual videos (not YouTube embeds) */}
+      {video.url && !video.youtubeId && (
         <div 
           className="absolute inset-0 flex items-center justify-center cursor-pointer"
           onClick={togglePlayPause}
@@ -164,8 +177,8 @@ export default function VideoPlayer({
         </div>
       )}
 
-      {/* Controls Overlay - only show for actual videos */}
-      {video.url && (
+      {/* Controls Overlay - only show for actual videos (not YouTube embeds) */}
+      {video.url && !video.youtubeId && (
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
         
         {/* Top Info */}

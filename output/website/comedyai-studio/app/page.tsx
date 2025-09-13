@@ -15,12 +15,13 @@ import {
   ExternalLink
 } from 'lucide-react'
 
-// Mock data for demo - placeholder for now
-const mockVideo = {
-  id: '1',
-  title: 'Working From Home Reality Check',
-  url: '', // Empty URL - will show placeholder
-  character: 'The Observational Oracle',
+// Real video data from social media
+const featuredVideo = {
+  id: '-mDJbhyQxKg',
+  title: 'AI Comedy Preview',
+  url: 'https://youtu.be/-mDJbhyQxKg',
+  youtubeId: '-mDJbhyQxKg',
+  character: 'PureComedy AI',
   duration: 30,
   views: 25000,
   likes: 1200,
@@ -151,7 +152,7 @@ export default function HomePage() {
             <div className="flex justify-center">
               <div className="relative">
                 <VideoPlayer 
-                  video={mockVideo}
+                  video={featuredVideo}
                   autoplay={false}
                   className="shadow-2xl bg-gradient-to-br from-orange-500 to-yellow-500"
                   onLike={() => console.log('Liked!')}
