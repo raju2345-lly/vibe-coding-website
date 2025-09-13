@@ -46,4 +46,5 @@ temp/
 
 # Hide outer documentation files for vibe-coding-website repository
 CLAUDE.md
-README.md
+VIBE-CODING-README.md
+# README.md now shows project documentation on GitHub
