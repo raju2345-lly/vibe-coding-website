@@ -74,7 +74,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have a question, feedback, or just want to say hello? We&apos;d love to hear from you!
+            Have a question, feedback, or just want to say hello? We'd love to hear from you!
           </p>
         </div>
         
@@ -90,7 +90,7 @@ export default function ContactPage() {
               
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">General Questions</h3>
-                <p className="text-gray-600">Send us a message using the form and we&apos;ll get back to you quickly</p>
+                <p className="text-gray-600">Send us a message using the form and we'll get back to you quickly</p>
               </div>
               
               <div>
@@ -201,7 +201,7 @@ export default function ContactPage() {
             {formState === 'success' && (
               <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
                 <p className="text-sm text-green-700">
-                  <strong>Message sent successfully!</strong> We&apos;ll get back to you soon.
+                  <strong>Message sent successfully!</strong> We'll get back to you soon.
                 </p>
               </div>
             )}

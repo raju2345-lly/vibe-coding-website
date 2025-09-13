@@ -145,19 +145,19 @@ export default function GalleryPage() {
                 </div>
               </div>
 
-              {/* Video Stats */}
+              {/* Video Info */}
               <div className="grid grid-cols-3 gap-4 py-6 border-y border-gray-200">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">127</div>
-                  <div className="text-sm text-gray-600">Views</div>
+                  <div className="text-lg font-bold text-orange-600">DEBUT</div>
+                  <div className="text-sm text-gray-600">First Video</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">23</div>
-                  <div className="text-sm text-gray-600">Likes</div>
+                  <div className="text-lg font-bold text-orange-600">AI-GEN</div>
+                  <div className="text-sm text-gray-600">Technology</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">5</div>
-                  <div className="text-sm text-gray-600">Comments</div>
+                  <div className="text-lg font-bold text-orange-600">FRESH</div>
+                  <div className="text-sm text-gray-600">Content</div>
                 </div>
               </div>
 
@@ -239,7 +239,7 @@ export default function GalleryPage() {
               The Journey Starts Here!
             </h3>
             <p className="text-gray-600 mb-6">
-              You&apos;re witnessing the birth of something special. Follow our fresh channels now to be part of the AI comedy revolution from the very beginning!
+              You're witnessing the birth of something special. Follow our fresh channels now to be part of the AI comedy revolution from the very beginning!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-black text-white hover:bg-gray-800">

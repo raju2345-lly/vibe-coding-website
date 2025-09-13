@@ -47,7 +47,7 @@ const testimonials = [
   {
     name: 'Alex T.',
     role: 'Beta Tester',
-    content: 'This AI comedy concept is groundbreaking! Can&apos;t wait to see how it evolves. Definitely following from day one.',
+    content: "This AI comedy concept is groundbreaking! Can't wait to see how it evolves. Definitely following from day one.",
     rating: 5
   },
   {
@@ -88,7 +88,7 @@ export default function HomePage() {
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Be among the first to discover cutting-edge AI-generated comedy content! 
-                  We&apos;re just getting started, and you&apos;re invited to join our comedy journey from day one.
+                  We're just getting started, and you're invited to join our comedy journey from day one.
                 </p>
               </div>
 
@@ -163,7 +163,7 @@ export default function HomePage() {
               The Future of Comedy is Here
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience groundbreaking AI-generated comedy that&apos;s personalized, fresh, and always evolving. 
+              Experience groundbreaking AI-generated comedy that's personalized, fresh, and always evolving. 
               Join us from the very beginning as we revolutionize digital entertainment.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function HomePage() {
               Early Access Preview
             </h2>
             <p className="text-xl text-gray-600">
-              Our beta testers are already excited about the future of AI comedy. Here&apos;s what they&apos;re saying:
+              Our beta testers are already excited about the future of AI comedy. Here's what they're saying:
             </p>
           </div>
 
