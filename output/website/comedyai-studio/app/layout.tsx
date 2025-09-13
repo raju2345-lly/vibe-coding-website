@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +22,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ComedyAI Studio - AI Comedy That Gets You",
     description: "Interactive AI comedy platform with multiple characters delivering personalized humor",
-    url: "https://comedyai-studio.com",
+    url: "https://ai-comedy.skillcatcher.com",
     siteName: "ComedyAI Studio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://ai-comedy.skillcatcher.com/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ComedyAI Studio - AI Comedy Platform",
     description: "Generate personalized comedy with AI characters",
-    images: ["/og-image.jpg"],
+    images: ["https://ai-comedy.skillcatcher.com/og-image.jpg"],
   },
 };
 
@@ -47,6 +49,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GQB32CR5QX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GQB32CR5QX', {
+              page_title: document.title,
+              page_location: window.location.href,
+              send_page_view: true,
+              debug_mode: false,
+              enhanced_measurement: {
+                scrolls: true,
+                outbound_clicks: true,
+                site_search: true,
+                video_engagement: true
+              }
+            });
+            console.log('Google Analytics initialized with ID: G-GQB32CR5QX');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -54,6 +82,7 @@ export default function RootLayout({
         <main className="min-h-screen">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

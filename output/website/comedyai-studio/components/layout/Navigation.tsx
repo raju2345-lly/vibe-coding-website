@@ -8,9 +8,9 @@ import { cn } from '@/lib/utils'
 
 const navigationItems = [
   { name: 'Home', href: '/', icon: Laugh },
-  { name: 'Generate', href: '/generate', icon: Sparkles },
-  { name: 'Trending', href: '/trending', icon: TrendingUp },
-  { name: 'Newsletter', href: '/newsletter', icon: Mail },
+  { name: 'Comedy Gallery', href: '/gallery', icon: Sparkles },
+  { name: 'About', href: '/about', icon: TrendingUp },
+  { name: 'Contact', href: '/contact', icon: Mail },
 ]
 
 export default function Navigation() {
@@ -46,16 +46,17 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" asChild>
-              <Link href="/login">Sign In</Link>
+          {/* Social Media CTAs */}
+          <div className="hidden md:flex items-center space-x-3">
+            <Button variant="outline" size="sm" asChild>
+              <a href="https://www.tiktok.com/@pureComedy.ai" target="_blank" rel="noopener noreferrer">
+                Follow on TikTok
+              </a>
             </Button>
-            <Button asChild className="bg-orange-500 hover:bg-orange-600">
-              <Link href="/generate">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Generate Comedy
-              </Link>
+            <Button asChild className="bg-red-600 hover:bg-red-700" size="sm">
+              <a href="https://www.youtube.com/@pureComedyAI" target="_blank" rel="noopener noreferrer">
+                Subscribe
+              </a>
             </Button>
           </div>
 
@@ -90,13 +91,14 @@ export default function Navigation() {
             
             <div className="pt-4 border-t border-gray-200 space-y-2">
               <Button variant="outline" className="w-full" asChild>
-                <Link href="/login">Sign In</Link>
+                <a href="https://www.tiktok.com/@pureComedy.ai" target="_blank" rel="noopener noreferrer">
+                  Follow on TikTok
+                </a>
               </Button>
-              <Button className="w-full bg-orange-500 hover:bg-orange-600" asChild>
-                <Link href="/generate">
-                  <Sparkles className="w-4 h-4 mr-2" />
-                  Generate Comedy
-                </Link>
+              <Button className="w-full bg-red-600 hover:bg-red-700" asChild>
+                <a href="https://www.youtube.com/@pureComedyAI" target="_blank" rel="noopener noreferrer">
+                  Subscribe on YouTube
+                </a>
               </Button>
             </div>
           </div>

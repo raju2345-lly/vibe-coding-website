@@ -120,16 +120,31 @@ export default function VideoPlayer({
           preload="metadata"
         />
       ) : (
-        // Placeholder for demo
-        <div className="w-full h-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
-          <div className="text-center space-y-4">
+        // Placeholder for demo with social CTA
+        <div className="w-full h-full bg-gradient-to-br from-orange-500 to-yellow-600 flex items-center justify-center">
+          <div className="text-center space-y-4 px-6">
             <div className="text-6xl">🎭</div>
             <div className="text-white text-lg font-semibold">Comedy Video Preview</div>
-            <div className="text-white/80 text-sm px-4">
-              This is where your AI-generated comedy video would appear
+            <div className="text-white/90 text-sm">
+              Get the full laughs on our social platforms!
             </div>
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
-              <Play className="w-8 h-8 text-white mx-auto" />
+            <div className="space-y-2">
+              <a
+                href="https://www.tiktok.com/@pureComedy.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-black text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-colors"
+              >
+                Follow on TikTok
+              </a>
+              <a
+                href="https://www.youtube.com/@pureComedyAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition-colors"
+              >
+                Subscribe on YouTube
+              </a>
             </div>
           </div>
         </div>

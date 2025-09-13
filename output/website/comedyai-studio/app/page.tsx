@@ -4,16 +4,15 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import VideoPlayer from '@/components/comedy/VideoPlayer'
+import { trackSocialClick, trackNewsletterSignup } from '@/components/analytics/GoogleAnalytics'
 import { 
-  Sparkles, 
   Users, 
   Zap, 
   TrendingUp, 
   Play, 
   ArrowRight,
   Star,
-  MessageCircle,
-  Share2
+  ExternalLink
 } from 'lucide-react'
 
 // Mock data for demo - placeholder for now
@@ -30,24 +29,24 @@ const mockVideo = {
 
 const features = [
   {
-    icon: Sparkles,
-    title: 'AI Comedy Generation',
-    description: 'Input any topic and get instant, personalized comedy content tailored to your sense of humor.'
-  },
-  {
-    icon: Users,
-    title: 'Multiple AI Characters',
-    description: 'Choose from 4 unique AI personalities, each with their own comedy style and perspective.'
-  },
-  {
-    icon: Zap,
-    title: 'Instant Content',
-    description: 'Generate fresh comedy content in seconds, perfect for your daily dose of laughs.'
+    icon: Play,
+    title: 'Comedy Discovery',
+    description: 'Discover the funniest AI-generated comedy content curated for working professionals.'
   },
   {
     icon: TrendingUp,
-    title: 'Trending Topics',
-    description: 'Stay current with AI that understands what\'s happening now and makes it funny.'
+    title: 'Social Media First',
+    description: 'Quick previews that lead you to full content on TikTok, YouTube, and Instagram.'
+  },
+  {
+    icon: Zap,
+    title: 'Mobile Optimized',
+    description: 'Perfect for busy professionals who need quick entertainment on-the-go.'
+  },
+  {
+    icon: Users,
+    title: 'Targeted Humor',
+    description: 'Comedy designed specifically for the 25-50 demographic with relatable content.'
   }
 ]
 
@@ -77,10 +76,15 @@ export default function HomePage() {
 
   const handleNewsletterSignup = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement newsletter signup
+    // Track newsletter signup
+    trackNewsletterSignup(email)
     console.log('Newsletter signup:', email)
     setEmail('')
     alert('Thanks for signing up! 🎭')
+  }
+
+  const handleSocialClick = (platform: string, url: string) => {
+    trackSocialClick(platform, url)
   }
 
   return (
@@ -95,28 +99,33 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  AI Comedy That
+                  AI Comedy
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600">
-                    {' '}Gets You
+                    {' '}Discovery
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Experience personalized stand-up comedy created by AI. Interactive generation, 
-                  multiple characters, and daily laughs designed for working professionals aged 25-50.
+                  Your gateway to the funniest AI-generated comedy content. Discover previews 
+                  here, then follow us on TikTok, YouTube, and Instagram for full laughs.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="xl" asChild className="bg-orange-500 hover:bg-orange-600">
-                  <Link href="/generate">
-                    <Sparkles className="w-5 h-5 mr-2" />
-                    Generate Comedy Now
-                  </Link>
+                  <a 
+                    href="https://www.tiktok.com/@pureComedy.ai" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={() => handleSocialClick('TikTok', 'https://www.tiktok.com/@pureComedy.ai')}
+                  >
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    Follow on TikTok
+                  </a>
                 </Button>
                 <Button variant="outline" size="xl" asChild>
-                  <Link href="/trending">
+                  <Link href="/gallery">
                     <Play className="w-5 h-5 mr-2" />
-                    Watch Trending
+                    Browse Gallery
                   </Link>
                 </Button>
               </div>
@@ -124,16 +133,16 @@ export default function HomePage() {
               {/* Stats */}
               <div className="flex items-center gap-8 pt-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">25K+</div>
-                  <div className="text-sm text-gray-600">Monthly Laughs</div>
+                  <div className="text-2xl font-bold text-gray-900">10K+</div>
+                  <div className="text-sm text-gray-600">Monthly Visitors</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">4</div>
-                  <div className="text-sm text-gray-600">AI Characters</div>
+                  <div className="text-2xl font-bold text-gray-900">15%</div>
+                  <div className="text-sm text-gray-600">Conversion Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">98%</div>
-                  <div className="text-sm text-gray-600">Satisfaction</div>
+                  <div className="text-2xl font-bold text-gray-900">3</div>
+                  <div className="text-sm text-gray-600">Platforms</div>
                 </div>
               </div>
             </div>
@@ -169,11 +178,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Comedy Generation, Reimagined
+              Comedy Discovery, Simplified
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our AI understands what makes working professionals laugh. No more scrolling 
-              through irrelevant content – get comedy that actually relates to your life.
+              Skip the endless scrolling. We curate the best AI-generated comedy content 
+              and direct you straight to the laughs on your favorite social platforms.
             </p>
           </div>
 
@@ -196,49 +205,55 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Meet Your AI Comedy Characters
+              Follow Us on Social Media
             </h2>
             <p className="text-xl text-gray-600">
-              Each character has a unique personality and comedy style tailored to different moods and topics.
+              Our AI-generated comedy lives on social platforms. Click to follow for daily laughs!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
               {
-                name: 'The Observational Oracle',
-                specialty: 'Workplace & Daily Life',
-                avatar: '🎯',
-                description: 'Master of finding humor in everyday situations'
-              },
-              {
-                name: 'The Trendy Commentator',
-                specialty: 'Current Events & Trends',
+                name: 'TikTok',
+                handle: '@pureComedy.ai',
                 avatar: '📱',
-                description: 'Always up-to-date with the latest social media buzz'
+                description: 'Short-form comedy videos perfect for your lunch break',
+                color: 'bg-black hover:bg-gray-800',
+                url: 'https://www.tiktok.com/@pureComedy.ai'
               },
               {
-                name: 'The Lifestyle Guru',
-                specialty: 'Food, Fashion & Travel',
-                avatar: '✈️',
-                description: 'Finds comedy in the finer things in life'
+                name: 'YouTube',
+                handle: '@pureComedyAI',
+                avatar: '📺',
+                description: 'Longer comedy content and behind-the-scenes insights',
+                color: 'bg-red-600 hover:bg-red-700',
+                url: 'https://www.youtube.com/@pureComedyAI'
               },
               {
-                name: 'The Millennial Mood',
-                specialty: 'Generational Humor',
-                avatar: '🥑',
-                description: 'Perfectly captures the millennial experience'
+                name: 'Instagram',
+                handle: '@purecomedy.ai',
+                avatar: '📸',
+                description: 'Visual comedy content and daily humor highlights',
+                color: 'bg-pink-600 hover:bg-pink-700',
+                url: 'https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMjIzNHExZQ%3D%3D&utm_source=qr'
               }
-            ].map((character, index) => (
-              <div key={index} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
+            ].map((platform, index) => (
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
                 <div className="text-center space-y-4">
-                  <div className="text-4xl">{character.avatar}</div>
-                  <h3 className="text-lg font-semibold text-gray-900">{character.name}</h3>
-                  <p className="text-sm font-medium text-orange-600">{character.specialty}</p>
-                  <p className="text-sm text-gray-600">{character.description}</p>
-                  <Button variant="outline" size="sm" className="w-full hover:bg-orange-50 hover:text-orange-600">
-                    Try This Character
-                  </Button>
+                  <div className="text-5xl">{platform.avatar}</div>
+                  <h3 className="text-xl font-semibold text-gray-900">{platform.name}</h3>
+                  <p className="text-sm font-medium text-gray-500">{platform.handle}</p>
+                  <p className="text-sm text-gray-600">{platform.description}</p>
+                  <a
+                    href={platform.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full inline-flex items-center justify-center px-4 py-2 rounded-lg text-white font-semibold transition-colors ${platform.color}`}
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Follow Now
+                  </a>
                 </div>
               </div>
             ))}
