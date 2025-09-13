@@ -249,22 +249,6 @@ vercel --prod
 - **Ground Floor Opportunity** messaging
 - **Authentic Growth Story** invitation
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Development Guidelines
-- **TypeScript**: Use strict typing
-- **ESLint**: Follow linting rules
-- **Responsive Design**: Mobile-first approach
-- **Accessibility**: WCAG 2.1 AA compliance
-- **Performance**: Optimize for Core Web Vitals
 
 ## 🔄 Recent Updates
 
