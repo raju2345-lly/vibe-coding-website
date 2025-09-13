@@ -19,7 +19,7 @@ export default function TermsPage() {
         </div>
         
         <div className="bg-white rounded-2xl p-8 shadow-lg text-gray-800">
-          <div className="prose prose-lg max-w-none [&>p]:text-justify [&>p]:leading-relaxed [&>li]:text-justify [&>li]:leading-relaxed [&>h2]:text-left [&>h3]:text-left">
+          <div className="prose prose-lg max-w-none [&>p]:text-justify [&>p]:leading-relaxed [&>li]:text-justify [&>li]:leading-relaxed [&>h2]:font-bold [&>h3]:font-bold">
           <h2>Agreement to Terms</h2>
           <p>
             By accessing ComedyAI Studio, you agree to be bound by these Terms of Service 
@@ -62,7 +62,7 @@ export default function TermsPage() {
 
           <h2>Disclaimers</h2>
           <p>
-            ComedyAI Studio is provided "as is" without warranties. 
+            ComedyAI Studio is provided &ldquo;as is&rdquo; without warranties. 
             We do not guarantee:
           </p>
           <ul>

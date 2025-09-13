@@ -20,46 +20,46 @@ const featuredVideo = {
   youtubeId: '-mDJbhyQxKg',
   character: 'PureComedy AI',
   duration: 30,
-  views: 25000,
-  likes: 1200,
-  comments: 89
+  views: 127,
+  likes: 23,
+  comments: 5
 }
 
 const features = [
   {
     icon: Play,
-    title: 'Comedy Discovery',
-    description: 'Discover the funniest AI-generated comedy content curated for working professionals.'
+    title: 'Cutting-Edge AI Comedy',
+    description: 'Experience the future of entertainment with AI that understands humor and creates personalized content.'
   },
   {
     icon: TrendingUp,
-    title: 'Social Media First',
-    description: 'Quick previews that lead you to full content on TikTok, YouTube, and Instagram.'
+    title: 'Ground Floor Opportunity',
+    description: 'Be among the first to discover and shape the next generation of digital comedy content.'
   },
   {
     icon: Zap,
-    title: 'Mobile Optimized',
-    description: 'Perfect for busy professionals who need quick entertainment on-the-go.'
+    title: 'Always Fresh Content',
+    description: 'Our AI continuously learns and creates new material, ensuring you never run out of laughs.'
   },
 ]
 
 const testimonials = [
   {
-    name: 'Sarah M.',
-    role: 'Marketing Manager',
-    content: 'Finally, comedy that gets my work-life struggles! The AI actually understands millennial humor.',
+    name: 'Alex T.',
+    role: 'Beta Tester',
+    content: 'This AI comedy concept is groundbreaking! Can&apos;t wait to see how it evolves. Definitely following from day one.',
     rating: 5
   },
   {
-    name: 'Mike R.',
-    role: 'Software Developer',
-    content: 'I use this during my lunch breaks. The tech humor is spot-on and actually makes my day better.',
+    name: 'Jordan K.',
+    role: 'Early Adopter',
+    content: 'Finally something truly innovative in comedy! The AI understanding of humor is impressive. Excited to be here early.',
     rating: 5
   },
   {
-    name: 'Jessica L.',
-    role: 'Product Manager',
-    content: 'Love how I can generate comedy about any topic. Great for sharing with my team!',
+    name: 'Sam L.',
+    role: 'Comedy Enthusiast',
+    content: 'Being part of this from the beginning feels special. The potential here is huge - following all platforms!',
     rating: 5
   }
 ]
@@ -81,14 +81,14 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  AI Comedy
+                  Fresh AI Comedy
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600">
-                    {' '}Discovery
+                    {' '}Just Launched!
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Your gateway to the funniest AI-generated comedy content. Discover previews 
-                  here, then follow us on TikTok, YouTube, and Instagram for full laughs.
+                  Be among the first to discover cutting-edge AI-generated comedy content! 
+                  We&apos;re just getting started, and you&apos;re invited to join our comedy journey from day one.
                 </p>
               </div>
 
@@ -112,18 +112,18 @@ export default function HomePage() {
                 </Button>
               </div>
 
-              {/* Stats */}
+              {/* Launch Stats */}
               <div className="flex items-center gap-8 pt-8">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">10K+</div>
-                  <div className="text-sm text-gray-600">Monthly Visitors</div>
+                  <div className="text-2xl font-bold text-orange-600">NEW</div>
+                  <div className="text-sm text-gray-600">Just Launched</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">15%</div>
-                  <div className="text-sm text-gray-600">Conversion Rate</div>
+                  <div className="text-2xl font-bold text-orange-600">AI</div>
+                  <div className="text-sm text-gray-600">Generated</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-gray-900">3</div>
+                  <div className="text-2xl font-bold text-orange-600">3</div>
                   <div className="text-sm text-gray-600">Platforms</div>
                 </div>
               </div>
@@ -142,12 +142,12 @@ export default function HomePage() {
                 />
                 
                 {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-semibold animate-bounce">
-                  New! 🎭
+                <div className="absolute -top-4 -right-4 bg-green-400 text-green-900 px-3 py-1 rounded-full text-sm font-semibold animate-bounce">
+                  Fresh Launch! 🚀
                 </div>
                 
                 <div className="absolute -bottom-4 -left-4 bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">
-                  AI Generated
+                  Be First! 🎭
                 </div>
               </div>
             </div>
@@ -160,11 +160,11 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Comedy Discovery, Simplified
+              The Future of Comedy is Here
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Skip the endless scrolling. We curate the best AI-generated comedy content 
-              and direct you straight to the laughs on your favorite social platforms.
+              Experience groundbreaking AI-generated comedy that&apos;s personalized, fresh, and always evolving. 
+              Join us from the very beginning as we revolutionize digital entertainment.
             </p>
           </div>
 
@@ -200,16 +200,16 @@ export default function HomePage() {
                 name: 'TikTok',
                 handle: '@pureComedy.ai',
                 avatar: '📱',
-                description: 'Short-form comedy videos perfect for your lunch break',
+                description: 'Fresh AI comedy clips - be among our first followers!',
                 color: 'bg-black hover:bg-gray-800',
                 url: 'https://www.tiktok.com/@pureComedy.ai',
-                buttonText: 'Follow Now'
+                buttonText: 'Be First to Follow'
               },
               {
                 name: 'YouTube',
                 handle: '@pureComedyAI',
                 avatar: '📺',
-                description: 'Longer comedy content and behind-the-scenes insights',
+                description: 'Extended AI comedy content - join our founding subscribers!',
                 color: 'bg-red-600 hover:bg-red-700',
                 url: 'https://www.youtube.com/@pureComedyAI',
                 buttonText: 'Subscribe Now'
@@ -218,10 +218,10 @@ export default function HomePage() {
                 name: 'Instagram',
                 handle: '@purecomedy.ai',
                 avatar: '📸',
-                description: 'Visual comedy content and daily humor highlights',
+                description: 'Behind-the-scenes AI comedy creation - early access!',
                 color: 'bg-pink-600 hover:bg-pink-700',
                 url: 'https://www.instagram.com/purecomedy.ai/?igsh=MW5zN2QxMjIzNHExZQ%3D%3D&utm_source=qr',
-                buttonText: 'Follow Now'
+                buttonText: 'Early Access'
               }
             ].map((platform, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
@@ -251,10 +251,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              What People Are Saying
+              Early Access Preview
             </h2>
             <p className="text-xl text-gray-600">
-              Join thousands of professionals who have found their daily dose of laughter.
+              Our beta testers are already excited about the future of AI comedy. Here&apos;s what they&apos;re saying:
             </p>
           </div>
 
@@ -266,7 +266,7 @@ export default function HomePage() {
                     <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-700 italic">"{testimonial.content}"</p>
+                <p className="text-gray-700 italic">&ldquo;{testimonial.content}&rdquo;</p>
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
                   <div className="text-sm text-gray-600">{testimonial.role}</div>

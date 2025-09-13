@@ -27,7 +27,7 @@ export default function ComingSoon() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-600"> Coming Soon</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're currently setting up our TikTok, YouTube, and Instagram accounts to bring you the best AI-generated comedy content. Stay tuned!
+              We&apos;re currently setting up our TikTok, YouTube, and Instagram accounts to bring you the best AI-generated comedy content. Stay tuned!
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function ComingSoon() {
                 <h3 className="text-2xl font-bold">Get Notified When We Launch!</h3>
               </div>
               <p className="text-white/90">
-                Be the first to know when our social media accounts go live. We'll send you the links as soon as they're ready.
+                Be the first to know when our social media accounts go live. We&apos;ll send you the links as soon as they&apos;re ready.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <input
