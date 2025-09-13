@@ -271,10 +271,6 @@ export default function VideoPlayer({
       </div>
       )}
 
-      {/* View Counter */}
-      <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
-        <span className="text-white text-xs">{formatNumber(video.views)} views</span>
-      </div>
     </div>
   )
 }
