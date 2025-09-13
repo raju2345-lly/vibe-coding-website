@@ -55,3 +55,5 @@ input/
 template/
 test/
 preflight-check.js
+output/docs/
+output/preflight-report.json
