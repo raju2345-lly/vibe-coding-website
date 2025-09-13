@@ -48,7 +48,7 @@ export default function Navigation() {
 
           {/* Social Media CTAs */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" asChild className="border-white text-white hover:bg-white hover:text-orange-500">
+            <Button asChild className="bg-black text-white hover:bg-gray-800" size="sm">
               <a href="https://www.tiktok.com/@pureComedy.ai" target="_blank" rel="noopener noreferrer">
                 Follow on TikTok
               </a>
@@ -90,7 +90,7 @@ export default function Navigation() {
             ))}
             
             <div className="pt-4 border-t border-orange-300 space-y-2">
-              <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-orange-500" asChild>
+              <Button className="w-full bg-black text-white hover:bg-gray-800" asChild>
                 <a href="https://www.tiktok.com/@pureComedy.ai" target="_blank" rel="noopener noreferrer">
                   Follow on TikTok
                 </a>

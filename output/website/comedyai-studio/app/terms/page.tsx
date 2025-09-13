@@ -18,7 +18,7 @@ export default function TermsPage() {
           </p>
         </div>
         
-        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none text-gray-800">
+        <div className="bg-white rounded-2xl p-8 shadow-lg prose prose-lg max-w-none text-gray-800 text-justify">
           <h2>Agreement to Terms</h2>
           <p>
             By accessing ComedyAI Studio, you agree to be bound by these Terms of Service 
@@ -99,9 +99,7 @@ export default function TermsPage() {
 
           <h2>Contact Information</h2>
           <p>
-            For questions about these Terms of Service, please contact us at:
-            <br />
-            <strong>legal@comedyai.studio</strong>
+            For questions about these Terms of Service, please visit our <a href="/contact" className="text-orange-500 hover:text-orange-600">Contact Us</a> page.
           </p>
 
           <h2>Governing Law</h2>

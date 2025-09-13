@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button'
 import VideoPlayer from '@/components/comedy/VideoPlayer'
 import { trackSocialClick } from '@/components/analytics/GoogleAnalytics'
 import { 
-  Users, 
   Zap, 
   TrendingUp, 
   Play, 
@@ -42,11 +41,6 @@ const features = [
     title: 'Mobile Optimized',
     description: 'Perfect for busy professionals who need quick entertainment on-the-go.'
   },
-  {
-    icon: Users,
-    title: 'Targeted Humor',
-    description: 'Comedy designed specifically for the 25-50 demographic with relatable content.'
-  }
 ]
 
 const testimonials = [
@@ -174,7 +168,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center space-y-4 group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 text-orange-600 rounded-2xl group-hover:scale-110 transition-transform">
