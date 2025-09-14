@@ -44,19 +44,5 @@ tmp/
 temp/
 .vercel
 
-# Hide outer documentation files for vibe-coding-website repository
-CLAUDE.md
-VIBE-CODING-README.md
-# README.md now shows project documentation on GitHub
-
-# Hide development/template folders and files for clean project focus
-history/
-input/
-template/
-test/
-preflight-check.js
-output/docs/
-output/preflight-report.json
-
-# Hide test screenshots from website project
-output/website/comedyai-studio/test/screenshots/
+# Hide test screenshots only
+test/screenshots/
